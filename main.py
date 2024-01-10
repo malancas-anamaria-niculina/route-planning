@@ -21,7 +21,7 @@ def main(towns_gps_points: list[GPSPoints]):
         best_intra_town_routes[town_central_points[town_index]]["Distance"] = min_distance_intra_town
         best_intra_town_routes[town_central_points[town_index]]["Town name"] = town_gps_points.city_name
 
-    return best_inter_town_route_indices, best_intra_town_routes, min_distance
+    return best_inter_town_route, best_intra_town_routes, min_distance
 
 
 if __name__ == "__main__":
